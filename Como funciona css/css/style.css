@@ -1,0 +1,80 @@
+/* ¿COMO FUNCIONA CSS?
+    background-colo-> pinta la fuente de la letra
+    color-> pinta solo la letra
+    font-size: el tamaño de la letra en pixeles
+    Especificidad -> Establece cómo de especifico es un selector para saber que estilo aplicar.
+    El cálculo se realiza con la siguiente fórmula:
+            Etiqeutas y pseudoelementos 001
+            Clases, atributos y pseudoclases 010
+            Ids 100
+            Estilos en línea 1000
+            !important GANA A TODO no es recomendable
+    Cascada -> Funciona siempre que la especificidad sobre el elemento sea la misma 
+    Herencia -> Es la capacidad que tienen algunos elementos de heredar algunas propiedades
+    de sus elementos contenedores (padres, abuelos, etc)
+        inherit -> hereda el color del padre forzamos
+
+
+h1{
+    background-color: red;
+}
+
+.title{
+    background-color: blue;
+}
+
+#title{
+    background-color: green;
+}
+
+h1.title{
+    background-color: yellow;
+}
+
+h1#title{
+    background-color: teal;
+}
+
+h1.title#title{
+    background-color: blue;
+}
+
+h1{
+    background-color: aqua !important;
+}
+
+Cascada
+
+.title{
+    background-color: teal;
+}
+
+.title{
+    background-color: yellow;
+}
+*/
+body{
+    background-color: #333;
+}
+#title{
+    color: red;
+}
+.title{
+    color: cyan;    
+    font-size: 40px; /*TAMAÑO*/
+}
+
+.text{
+    color: green;
+}
+
+.link{
+    color: inherit;
+}
+
+.list{
+    color: indianred;
+}
+.list-item-extra{
+    color: initial;
+}

@@ -1,0 +1,93 @@
+/* SELECTORES */
+
+/* 
+    Selectores Simples
+        Selectores elementales
+            Selector Universal -> *
+            Selector de tipo o etiqueta -> Nombre de la etiqueta
+        Selectores de atributo
+            id -> id del elemento
+            clase -> clase del elemento
+            otros atributos:
+                [atributo]
+                [atributo=valor]
+                [atributo^=valor]
+                [atributo*=valor]
+                [atributo$=valor]
+                [atributo|=valor]
+    Selectores Compuestos
+        Selectores Agrupados -> Se agrupan los selectores separados por comas y se escribe el estilo una sola vez
+        Selectores Combinadores
+            Selector Desendiente
+            Selector de hermano siguiente +
+            Selector de hermanos siguientes ~
+            Selector de hijo directo >  -> Selecciona SOLO hijos directos
+        Pseudoclases - Pseudoelementos
+*/
+
+/* *{
+    background-color: brown;
+}
+
+h1{
+    background-color: lightcyan;
+}
+p{
+    background-color: lightgreen;
+}
+ul{
+    background-color: red;
+}
+li{
+    background-color: blue;
+} 
+
+#title{
+    background-color: lightgreen;
+}
+.title{
+    background-color: lightsalmon;
+}
+.text{
+    background-color: lightgreen;
+}
+
+[href]{
+    background-color: mediumorchid;
+}
+[href="https://google.com"]{
+    background-color: orangered;
+}
+[href^="color"]{
+    background-color: red;
+}
+[href*="modo"]{
+    background-color: green;
+}
+[href$="azul"]{
+    background-color: steelblue;
+}
+
+Selectores Agrupados
+.text,.text-2,.text-3,.text-4{
+    background-color: steelblue;
+}
+
+Selector descendiente
+div .title-2{
+    background-color: teal;
+}
+Selector hermano siguiente
+.text-2 + .title-2{
+    background-color: tomato;
+}
+
+.text-2 ~ p{
+    background-color: teal;
+}
+
+Selector de hijo directo 
+*/
+.container > p{
+    background-color: tomato;
+}
