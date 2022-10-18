@@ -1,0 +1,15 @@
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.icon{
+    font-size: 10rem;
+    color: red;
+}
+.icon1{
+    font-size: 2rem;
+    filter: invert(1);
+}
